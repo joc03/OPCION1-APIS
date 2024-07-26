@@ -1,9 +1,9 @@
 Feature: APIS DEMOBLAZE
 
-  @Login
-  Scenario: Login
-    Given url 'https://restful-booker.herokuapp.com/auth'
-    And request { "username": "admin", "password": "password123" }
+  @SigIn
+  Scenario: SigIn
+    Given url 'https://api.demoblaze.com/signup'
+    And request {"username": "operador123", "password": "clave456"}
     When method post
     Then status 200
-
+    

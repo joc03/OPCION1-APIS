@@ -484,3 +484,55 @@ src/test/java/examples/users/demoblaze.feature:9
 {"token":"a3d7ac105069e4d"}
 
 10:26:27.238 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/demoblaze.feature
+18:19:23.571 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:19:23.580 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1722035963578
+18:19:23.643 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 4 - ^Login$
+18:19:25.419 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:19:26.798 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/signup
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 48
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_351)
+1 > Accept-Encoding: gzip,deflate
+{"username":"operador123","password":"clave456"}
+
+18:19:27.805 [main] DEBUG com.intuit.karate - response time in milliseconds: 1004
+1 < 200
+1 < Content-Type: application/json
+1 < X-Cloud-Trace-Context: 0a14b6370984dca2d70b1952dc8f77e8
+1 < Date: Fri, 26 Jul 2024 23:19:27 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 3
+""
+
+
+18:19:28.998 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/demoblaze.feature
+18:22:31.386 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:22:31.395 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1722036151394
+18:22:31.440 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 11 - ^Login$
+18:22:33.059 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:22:34.349 [main] DEBUG com.intuit.karate - request:
+1 > POST https://api.demoblaze.com/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 48
+1 > Host: api.demoblaze.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_351)
+1 > Accept-Encoding: gzip,deflate
+{"username":"operador123","password":"clave456"}
+
+18:22:35.195 [main] DEBUG com.intuit.karate - response time in milliseconds: 843
+1 < 200
+1 < Content-Type: application/json
+1 < Vary: Accept-Encoding
+1 < X-Cloud-Trace-Context: b3a0ce4d7af6aba00e7b5495b652d3f9;o=1
+1 < Date: Fri, 26 Jul 2024 23:22:34 GMT
+1 < Server: Google Frontend
+1 < Cache-Control: private
+1 < Transfer-Encoding: chunked
+"Auth_token: b3BlcmFkb3IxMjMxNzIyNjM2"
+
+
+18:22:36.221 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/demoblaze.feature
