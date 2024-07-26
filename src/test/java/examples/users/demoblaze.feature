@@ -6,4 +6,11 @@ Feature: APIS DEMOBLAZE
     And request {"username": "operador123", "password": "clave456"}
     When method post
     Then status 200
-    
+
+  @Login
+  Scenario: Login
+    Given url 'https://api.demoblaze.com/login'
+    And request {"username": "operador123", "password": "clave456"}
+    When method post
+    Then status 200
+
