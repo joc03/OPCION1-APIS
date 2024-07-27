@@ -1,16 +1,16 @@
 Feature: APIS DEMOBLAZE
 
-  @SigIn
-  Scenario: SigIn
-    Given url 'https://api.demoblaze.com/signup'
-    And request {"username": "operador123", "password": "clave456"}
+  Background:
+    * url 'https://api.demoblaze.com'
+  @SigInNew
+  Scenario Outline: SigIn con usuario nuevo
+    Given path 'signup'
+    And request {"username": "<username>", "password": "<password>"}
     When method post
     Then status 200
+    And match response contains '""'
+    Examples:
+      | username  |   password |
+      | asdsada12312    |  asdd1234sdf   |
 
-  @Login
-  Scenario: Login
-    Given url 'https://api.demoblaze.com/login'
-    And request {"username": "operador123", "password": "clave456"}
-    When method post
-    Then status 200
-
+  
