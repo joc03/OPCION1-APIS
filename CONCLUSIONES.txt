@@ -1,0 +1,4 @@
+CONCLUSIONES
+
+Se logro finalizar la pregunta numero 2 de la prueba en donde notamos que el api encargada del login cuando esta correcta nos arroja un token en cambio la de signin solo muestra un body vacio
+asi como tambien cabe recalcar que el ejercicio era my completo para poder usar todo tipo de metodos y tecnicas para mejorar y optimizar el script
