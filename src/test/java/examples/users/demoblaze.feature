@@ -13,4 +13,15 @@ Feature: APIS DEMOBLAZE
       | username  |   password |
       | asdsada12312    |  asdd1234sdf   |
 
-  
+  @SigInRepeat
+  Scenario Outline: SigIn con usuario repetido
+    Given path 'signup'
+    And request {"username": "<username>", "password": "<password>"}
+    When method post
+    Then status 200
+    And match response == { "errorMessage": "This user already exist." }
+
+    Examples:
+      | username  |   password |
+      | joc123456    |  lalala123456   |
+
