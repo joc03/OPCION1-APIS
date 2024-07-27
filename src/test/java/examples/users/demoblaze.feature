@@ -11,7 +11,7 @@ Feature: APIS DEMOBLAZE
     And match response contains '""'
     Examples:
       | username  |   password |
-      | asdsada12312    |  asdd1234sdf   |
+      | asgsadf342    |  q23asdas212   |
 
   @SigInRepeat
   Scenario Outline: SigIn con usuario repetido

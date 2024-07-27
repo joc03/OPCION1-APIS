@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: examples.ExamplesTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.695 s <<< FAILURE! - in examples.ExamplesTest
+testParallel  Time elapsed: 6.688 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+match failed: CONTAINS
+  $ | data types don't match (MAP:STRING)
+  {"errorMessage":"This user already exist."}
+  '""'
+
+
+classpath:examples/users/demoblaze.feature:11 ==> expected: <0> but was: <1>
+	at examples.ExamplesTest.testParallel(ExamplesTest.java:15)
+

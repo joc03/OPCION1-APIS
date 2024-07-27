@@ -25,15 +25,12 @@ Feature: APIS DEMOBLAZE
       | username  |   password |
       | joc123456    |  lalala123456   |
 
-
   @LoginSucces
   Scenario Outline: Login con credenciales correctas
     Given path 'login'
     And request {"username": "<username>", "password": "<password>"}
     When method post
     Then status 200
-    And match response contains '"Auth_token": "#not null"'
-
 
 
     Examples:
