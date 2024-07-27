@@ -31,9 +31,21 @@ Feature: APIS DEMOBLAZE
     And request {"username": "<username>", "password": "<password>"}
     When method post
     Then status 200
-    
+
 
     Examples:
       | username  |   password |
       | joc123456    |  lalala123456 |
 
+  @LoginIncorrect
+  Scenario Outline: Login con credenciales incorrectas
+    Given path 'login'
+    And request {"username": "<username>", "password": "<password>"}
+    When method post
+    Then status 200
+    And match response == {"errorMessage":"Wrong password."}
+
+
+    Examples:
+      | username  |   password |
+      | joc123    |  lalala123   |
